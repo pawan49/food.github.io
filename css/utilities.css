@@ -1,0 +1,99 @@
+.flex {
+    display: flex;
+}
+
+.justify-between {
+    justify-content: space-between;
+}
+
+.items-center {
+    align-items: center;
+}
+
+.justify-center {
+    justify-content: center;
+}
+
+.magic-shadow {
+    position: relative;
+    background-color: var(--heaven);
+}
+
+.magic-shadow:after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 69px;
+    display: block;
+    background-image: url(/icons/shadow.svg);
+    bottom: -24px;
+    z-index: -1;
+}
+
+.btn {
+    padding: 0.7rem 0.75rem;
+    border-radius: 5px;
+    line-height: 0.8;
+    font-size: 1rem;
+    cursor: pointer;
+    border: 1px solid transparent;
+    transition: all 0.3s ease;
+}
+
+.btn-primary {
+    background-color: var(--primary);
+    color: var(--heavan);
+}
+
+.btn-secondary {
+    background-color: var(--secondary);
+    color: var(--heavan);
+}
+
+.btn-secondary:hover {
+    background-color: var(--heavan);
+    color: var(--secondary);
+    border: 1px solid var(--secondary);
+}
+
+.btn:focus {
+    outline: none;
+}
+
+.btn-primary:hover {
+    background-color: var(--heavan);
+    color: var(--primary);
+    border: 1px solid var(--primary);
+}
+
+.section-heading {
+    text-align: center;
+    font-family: 'Raleway-bold';
+    font-size: 1.5rem;
+    position: relative;
+    margin-bottom: 6rem;
+}
+
+.section-heading::after {
+    content: '';
+    width: 100%;
+    height: 30px;
+    display: block;
+    position: absolute;
+    background-image: url(/icons/hr.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    bottom: -40px;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.flex-1 {
+    flex: 1;
+}
+
+.text-pure {
+    color: #fff;
+}
